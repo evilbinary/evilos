@@ -1,0 +1,24 @@
+# Boot automatically after 30 secs.
+timeout 1
+# By default, boot the first entry.
+default 1
+
+# Fallback to the second entry.
+fallback 1
+
+# Set the color ;)
+color light-green/black blink-red/black
+
+# For booting EvilBinary OS
+title  EvilBinary OS
+	root   (fd0)
+	kernel /boot/kernel
+	#vbeprobe 0x142
+	vbeset 0x142
+	#testvbe 0x142
+	boot
+# For booting EvilBinary OS without gui
+title  EvilBinary OS without gui
+	root   (fd0)
+	kernel /boot/kernel
+	boot

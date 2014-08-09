@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="evilos" />
+		<Option pch_mode="2" />
+		<Option compiler="msvc10" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/evilos" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="msvc10" />
+				<Compiler>
+					<Add option="/Zi" />
+					<Add option="/D_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="/DEBUG" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/evilos" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="msvc10" />
+				<Compiler>
+					<Add option="/Ox" />
+					<Add option="/DNDEBUG" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="/W3" />
+		</Compiler>
+		<Unit filename="Makefile" />
+		<Unit filename="boot.S" />
+		<Unit filename="eeos_pipe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="eeos_pipe.h" />
+		<Unit filename="exceptions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gui/box.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gui/box.h" />
+		<Unit filename="gui/canvas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gui/canvas.h" />
+		<Unit filename="gui/display.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gui/display.h" />
+		<Unit filename="include/asm.h" />
+		<Unit filename="include/bmp.h" />
+		<Unit filename="include/interrupt.h" />
+		<Unit filename="include/isr.h" />
+		<Unit filename="include/kb.h" />
+		<Unit filename="include/kernel.h" />
+		<Unit filename="include/kprintf.h" />
+		<Unit filename="include/libcc.h" />
+		<Unit filename="include/mm.h" />
+		<Unit filename="include/mouse.h" />
+		<Unit filename="include/multiboot.h" />
+		<Unit filename="include/mutex.h" />
+		<Unit filename="include/page.h" />
+		<Unit filename="include/queue.h" />
+		<Unit filename="include/screen.h" />
+		<Unit filename="include/syscall.h" />
+		<Unit filename="include/task.h" />
+		<Unit filename="include/timer.h" />
+		<Unit filename="include/type.h" />
+		<Unit filename="init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="isr.S" />
+		<Unit filename="kb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kb.s" />
+		<Unit filename="kernel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kmalloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kmalloc.h" />
+		<Unit filename="kprintf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/ctype.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/errno.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/getopt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/gettimeofday.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/include/ctype.h" />
+		<Unit filename="lib/include/errno.h" />
+		<Unit filename="lib/include/float.h" />
+		<Unit filename="lib/include/getopt.h" />
+		<Unit filename="lib/include/gettimeofday.h" />
+		<Unit filename="lib/include/inttypes.h" />
+		<Unit filename="lib/include/math.h" />
+		<Unit filename="lib/include/signal.h" />
+		<Unit filename="lib/include/stdarg.h" />
+		<Unit filename="lib/include/stddef.h" />
+		<Unit filename="lib/include/stdint.h" />
+		<Unit filename="lib/include/stdio.h" />
+		<Unit filename="lib/include/stdlib.h" />
+		<Unit filename="lib/include/string.h" />
+		<Unit filename="lib/include/strings.h" />
+		<Unit filename="lib/include/sys/file.h" />
+		<Unit filename="lib/include/sys/ipc.h" />
+		<Unit filename="lib/include/sys/mman.h" />
+		<Unit filename="lib/include/sys/msg.h" />
+		<Unit filename="lib/include/sys/resource.h" />
+		<Unit filename="lib/include/sys/select.h" />
+		<Unit filename="lib/include/sys/sem.h" />
+		<Unit filename="lib/include/sys/socket.h" />
+		<Unit filename="lib/include/sys/stat.h" />
+		<Unit filename="lib/include/sys/time.h" />
+		<Unit filename="lib/include/sys/timeb.h" />
+		<Unit filename="lib/include/sys/times.h" />
+		<Unit filename="lib/include/sys/types.h" />
+		<Unit filename="lib/include/sys/uio.h" />
+		<Unit filename="lib/include/sys/un.h" />
+		<Unit filename="lib/include/sys/utsname.h" />
+		<Unit filename="lib/include/time.h" />
+		<Unit filename="lib/include/types.h" />
+		<Unit filename="lib/include/unistd.h" />
+		<Unit filename="lib/signal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/sscanf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/stat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/stdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/stdlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/string.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/strings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/timeb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/utsname.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/vsprintf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="malloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="malloc.h" />
+		<Unit filename="mm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mouse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="page.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="screen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sem.h" />
+		<Unit filename="syscall.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="task.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/make_initrd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/boot.s" />
+		<Unit filename="the_vfs_and_initrd/src/common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/common.h" />
+		<Unit filename="the_vfs_and_initrd/src/descriptor_tables.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/descriptor_tables.h" />
+		<Unit filename="the_vfs_and_initrd/src/fs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/fs.h" />
+		<Unit filename="the_vfs_and_initrd/src/gdt.s" />
+		<Unit filename="the_vfs_and_initrd/src/initrd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/initrd.h" />
+		<Unit filename="the_vfs_and_initrd/src/interrupt.s" />
+		<Unit filename="the_vfs_and_initrd/src/isr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/isr.h" />
+		<Unit filename="the_vfs_and_initrd/src/kheap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/kheap.h" />
+		<Unit filename="the_vfs_and_initrd/src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/monitor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/monitor.h" />
+		<Unit filename="the_vfs_and_initrd/src/multiboot.h" />
+		<Unit filename="the_vfs_and_initrd/src/ordered_array.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/ordered_array.h" />
+		<Unit filename="the_vfs_and_initrd/src/paging.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/paging.h" />
+		<Unit filename="the_vfs_and_initrd/src/timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="the_vfs_and_initrd/src/timer.h" />
+		<Unit filename="timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/config.h" />
+		<Unit filename="tools/grub-vbe-patch/docs/boot.S" />
+		<Unit filename="tools/grub-vbe-patch/docs/kernel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/docs/multiboot.h" />
+		<Unit filename="tools/grub-vbe-patch/grub/asmstub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/grub/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/lib/device.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/lib/device.h" />
+		<Unit filename="tools/grub-vbe-patch/lib/getopt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/lib/getopt.h" />
+		<Unit filename="tools/grub-vbe-patch/lib/getopt1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/3c509.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/3c509.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/3c595.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/3c595.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/3c90x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/cards.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/cs89x0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/cs89x0.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/davicom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/depca.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/eepro.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/eepro100.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/epic100.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/epic100.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/etherboot.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/fa311.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/fsys_tftp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/i82586.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/lance.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/linux-asm-io.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/linux-asm-string.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/natsemi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/ni5010.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/nic.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/ns8390.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/ns8390.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/osdep.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/otulip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/otulip.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/pci.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/pci.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/rtl8139.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/sis900.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/sis900.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/sk_g16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/sk_g16.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/smc9000.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/smc9000.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/tiara.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/timer.h" />
+		<Unit filename="tools/grub-vbe-patch/netboot/tlan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/tulip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/via-rhine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/netboot/w89c840.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage1/stage1.S" />
+		<Unit filename="tools/grub-vbe-patch/stage1/stage1.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/apic.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/apm.S" />
+		<Unit filename="tools/grub-vbe-patch/stage2/asm.S" />
+		<Unit filename="tools/grub-vbe-patch/stage2/bios.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/boot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/builtins.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/char_io.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/cmdline.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/console.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/defs.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/dir.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/disk_inode.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/disk_inode_ffs.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/disk_io.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/fat.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/filesys.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/freebsd.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/fs.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/fsys_ext2fs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/fsys_fat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/fsys_ffs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/fsys_iso9660.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/fsys_jfs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/fsys_minix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/fsys_reiserfs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/fsys_ufs2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/fsys_vstafs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/fsys_xfs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/gunzip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/hercules.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/hercules.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/i386-elf.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/imgact_aout.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/iso9660.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/jfs.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/mb_header.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/mb_info.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/md5.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/nbi.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/nbloader.S" />
+		<Unit filename="tools/grub-vbe-patch/stage2/pc_slice.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/pxeloader.S" />
+		<Unit filename="tools/grub-vbe-patch/stage2/serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/serial.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/setjmp.S" />
+		<Unit filename="tools/grub-vbe-patch/stage2/shared.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/smp-imps.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/smp-imps.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/stage1_5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/stage2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/stage2_size.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/start.S" />
+		<Unit filename="tools/grub-vbe-patch/stage2/start_eltorito.S" />
+		<Unit filename="tools/grub-vbe-patch/stage2/term.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/terminfo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/terminfo.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/tparm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/grub-vbe-patch/stage2/tparm.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/ufs2.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/vstafs.h" />
+		<Unit filename="tools/grub-vbe-patch/stage2/xfs.h" />
+		<Unit filename="tools/grub-vbe-patch/util/mbchk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vbe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vbe.h" />
+		<Unit filename="vesa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vesa.h" />
+		<Unit filename="vfs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vfs.h" />
+		<Unit filename="vmalloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vmalloc.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

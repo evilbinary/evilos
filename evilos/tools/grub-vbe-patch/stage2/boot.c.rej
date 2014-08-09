@@ -1,0 +1,22 @@
+***************
+*** 87,99 ****
+  	    }
+  	  type = KERNEL_TYPE_MULTIBOOT;
+  	  str2 = "Multiboot";
+- 	  
+-       /* Check to see if the kernel wants a video mode */
+- 	  if ( (flags & MULTIBOOT_VIDEO_MODE) != 0 )
+- 	  {
+- 	  	// ... give it to the kernel
+- 	  }
+- 
+  	  break;
+  	}
+      }
+--- 87,92 ----
+  	    }
+  	  type = KERNEL_TYPE_MULTIBOOT;
+  	  str2 = "Multiboot";
+  	  break;
+  	}
+      }

@@ -1,0 +1,152 @@
+00000000000i[     ] Bochs x86 Emulator 2.3.pre3
+00000000000i[     ]   Build from CVS snapshot on August 6, 2006
+00000000000i[     ] System configuration
+00000000000i[     ]   processors: 1 (cores=1, HT threads=1)
+00000000000i[     ]   A20 line support: yes
+00000000000i[     ]   APIC support: yes
+00000000000i[     ] CPU configuration
+00000000000i[     ]   level: 6
+00000000000i[     ]   paging support: yes, tlb enabled: yes
+00000000000i[     ]   SMP support: no
+00000000000i[     ]   FPU support: yes
+00000000000i[     ]   MMX support: yes
+00000000000i[     ]   SSE support: 1
+00000000000i[     ]   v8086 mode support: yes
+00000000000i[     ]   VME support: yes
+00000000000i[     ]   3dnow! support: no
+00000000000i[     ]   PAE support: yes
+00000000000i[     ]   PGE support: yes
+00000000000i[     ]   PSE support: yes
+00000000000i[     ]   x86-64 support: no
+00000000000i[     ]   SEP support: yes
+00000000000i[     ] Optimization configuration
+00000000000i[     ]   Guest2HostTLB support: yes
+00000000000i[     ]   RepeatSpeedups support: yes
+00000000000i[     ]   Icache support: yes
+00000000000i[     ]   Host Asm support: yes
+00000000000i[     ]   Fast function calls: yes
+00000000000i[     ] Devices configuration
+00000000000i[     ]   NE2000 support: yes
+00000000000i[     ]   PCI support: yes
+00000000000i[     ]   SB16 support: yes
+00000000000i[     ]   USB support: yes
+00000000000i[     ]   VGA extension support: vbe cirrus
+00000000000i[MEM0 ] allocated memory at 00D50020. after alignment, vector=00D51000
+00000000000i[MEM0 ] 64.00MB
+00000000000i[MEM0 ] rom at 0xf0000/65536 ('../BIOS-bochs-latest')
+00000000000i[MEM0 ] rom at 0xc0000/32768 ('../VGABIOS-lgpl-latest')
+00000000000i[APIC?] set APIC ID to 0
+00000000000i[APIC0] 80686
+00000000000i[APIC0] local apic in CPU apicid=00 initializing
+00000000000i[IOAP ] initializing I/O APIC
+00000000000i[IOAP ] set APIC ID to 1
+00000000000i[MEM0 ] Register memory access handlers: fec00000-fec00fff
+00000000000i[CMOS ] Using local time for initial clock
+00000000000i[CMOS ] Setting initial clock to: Tue Oct 08 23:18:45 2013 (time0=1381245525)
+00000000000i[DMA  ] channel 4 used by cascade
+00000000000i[DMA  ] channel 2 used by Floppy Drive
+00000000000i[FDD  ] fd0: 'boot.img' ro=0, h=2,t=80,spt=18
+00000000000i[PCI  ] 440FX Host bridge present at device 0, function 0
+00000000000i[PCI  ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
+00000000000i[MEM0 ] Register memory access handlers: 000a0000-000bffff
+00000000000i[WGUI ] Number of Mouse Buttons = 5
+00000000000i[WGUI ] IME disabled
+00000000000i[MEM0 ] Register memory access handlers: e0000000-e03fffff
+00000000000i[CLVGA] VBE Bochs Display Extension Enabled
+00000000000i[CLVGA] interval=40000
+00000000000i[     ] init_mem of 'harddrv' plugin device by virtual method
+00000000000i[     ] init_mem of 'keyboard' plugin device by virtual method
+00000000000i[     ] init_mem of 'serial' plugin device by virtual method
+00000000000i[     ] init_mem of 'parallel' plugin device by virtual method
+00000000000i[     ] init_mem of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] init_mem of 'gameport' plugin device by virtual method
+00000000000i[     ] init_mem of 'speaker' plugin device by virtual method
+00000000000i[     ] init_mem of 'pci_ide' plugin device by virtual method
+00000000000i[     ] init_dev of 'harddrv' plugin device by virtual method
+00000000000i[HD   ] Using boot sequence floppy, none, none
+00000000000i[HD   ] Floppy boot signature check is enabled
+00000000000i[     ] init_dev of 'keyboard' plugin device by virtual method
+00000000000i[KBD  ] will paste characters every 1000 keyboard ticks
+00000000000i[     ] init_dev of 'serial' plugin device by virtual method
+00000000000i[SER  ] com1 at 0x03f8 irq 4
+00000000000i[     ] init_dev of 'parallel' plugin device by virtual method
+00000000000i[PAR  ] parallel port 1 at 0x0378 irq 7
+00000000000i[     ] init_dev of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] init_dev of 'gameport' plugin device by virtual method
+00000000000i[     ] init_dev of 'speaker' plugin device by virtual method
+00000000000i[     ] init_dev of 'pci_ide' plugin device by virtual method
+00000000000i[PCI  ] PIIX3 PCI IDE controller present at device 1, function 1
+00000000000i[     ] register state of 'harddrv' plugin device by virtual method
+00000000000i[     ] register state of 'keyboard' plugin device by virtual method
+00000000000i[     ] register state of 'serial' plugin device by virtual method
+00000000000i[     ] register state of 'parallel' plugin device by virtual method
+00000000000i[     ] register state of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] register state of 'gameport' plugin device by virtual method
+00000000000i[     ] register state of 'speaker' plugin device by virtual method
+00000000000i[     ] register state of 'pci_ide' plugin device by virtual method
+00000000000i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00000000000i[APIC0] local apic in CPU 0 initializing
+00000000000i[     ] reset of 'harddrv' plugin device by virtual method
+00000000000i[     ] reset of 'keyboard' plugin device by virtual method
+00000000000i[     ] reset of 'serial' plugin device by virtual method
+00000000000i[     ] reset of 'parallel' plugin device by virtual method
+00000000000i[     ] reset of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] reset of 'gameport' plugin device by virtual method
+00000000000i[     ] reset of 'speaker' plugin device by virtual method
+00000000000i[     ] reset of 'pci_ide' plugin device by virtual method
+00000003740i[BIOS ] $Revision: 1.164 $ $Date: 2006/07/30 09:37:33 $
+00000318057i[KBD  ] reset-disable command received
+00000319679i[PIDE ] new BM-DMA address: 0xc000
+00000427000i[VBIOS] VGABios $Id: vgabios.c,v 1.63 2005/12/26 19:50:26 vruppert Exp $
+00000427071i[CLVGA] VBE known Display Interface b0c0
+00000427103i[CLVGA] VBE known Display Interface b0c3
+00000430028i[VBIOS] VBE Bios $Id: vbe.c,v 1.48 2005/12/26 19:50:26 vruppert Exp $
+00000480000i[WGUI ] dimension update x=720 y=400 fontheight=16 fontwidth=9 bpp=8
+00005914696i[BIOS ] int13_harddisk: function 41, unmapped device for ELDL=80
+00005919456i[BIOS ] int13_harddisk: function 08, unmapped device for ELDL=80
+00005924101i[BIOS ] *** int 15h function AX=00C0, BX=0000 not yet supported!
+00030614893i[CPU0 ] WARNING: HLT instruction with IF=0!
+00268102000i[WGUI ] system RESET callback
+00268102000i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00268102000i[APIC0] local apic in CPU 0 initializing
+00268102000i[     ] reset of 'harddrv' plugin device by virtual method
+00268102000i[     ] reset of 'keyboard' plugin device by virtual method
+00268102000i[     ] reset of 'serial' plugin device by virtual method
+00268102000i[     ] reset of 'parallel' plugin device by virtual method
+00268102000i[     ] reset of 'extfpuirq' plugin device by virtual method
+00268102000i[     ] reset of 'gameport' plugin device by virtual method
+00268102000i[     ] reset of 'speaker' plugin device by virtual method
+00268102000i[     ] reset of 'pci_ide' plugin device by virtual method
+00268102000i[CPU0 ] handleAsyncEvent: reset detected in HLT state
+00268105867i[BIOS ] $Revision: 1.164 $ $Date: 2006/07/30 09:37:33 $
+00268420062i[KBD  ] reset-disable command received
+00268529005i[VBIOS] VGABios $Id: vgabios.c,v 1.63 2005/12/26 19:50:26 vruppert Exp $
+00268529076i[CLVGA] VBE known Display Interface b0c0
+00268529108i[CLVGA] VBE known Display Interface b0c3
+00268532033i[VBIOS] VBE Bios $Id: vbe.c,v 1.48 2005/12/26 19:50:26 vruppert Exp $
+00274016656i[BIOS ] int13_harddisk: function 41, unmapped device for ELDL=80
+00274021416i[BIOS ] int13_harddisk: function 08, unmapped device for ELDL=80
+00274026061i[BIOS ] *** int 15h function AX=00C0, BX=0000 not yet supported!
+00298716898i[CPU0 ] WARNING: HLT instruction with IF=0!
+00385208000p[WGUI ] >>PANIC<< POWER button turned off.
+00385208000i[SYS  ] Last time is 1381245717
+00385208000i[CPU0 ] protected mode
+00385208000i[CPU0 ] CS.d_b = 32 bit
+00385208000i[CPU0 ] SS.d_b = 32 bit
+00385208000i[CPU0 ] | EAX=00000080  EBX=0002d9e0  ECX=0000000f  EDX=000003d5
+00385208000i[CPU0 ] | ESP=0014290c  EBP=00067ecc  ESI=00000000  EDI=0002de96
+00385208000i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf zf af PF cf
+00385208000i[CPU0 ] | SEG selector     base    limit G D
+00385208000i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00385208000i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 0000ffff 1 1
+00385208000i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 0000ffff 1 1
+00385208000i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 000fffff 1 1
+00385208000i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 0000ffff 1 1
+00385208000i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 0000ffff 1 1
+00385208000i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 0000ffff 1 1
+00385208000i[CPU0 ] | EIP=00100c79 (00100c79)
+00385208000i[CPU0 ] | CR0=0x80000011 CR1=0 CR2=0x00000000
+00385208000i[CPU0 ] | CR3=0x00400000 CR4=0x00000000
+00385208000i[CPU0 ] >> ret  : C3
+00385208000i[     ] restoring default signal behavior
+00385208000i[CTRL ] quit_sim called with exit code 1

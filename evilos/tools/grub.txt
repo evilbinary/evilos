@@ -1,0 +1,5 @@
+losetup /dev/loop0 boot.img
+mount /dev/loop0 /mnt/floppy/
+./grub-install  --root-directory=/mnt/floppy/boot/grub/ /dev/loop0
+umount /mnt/floppy
+losetup -d /dev/loop0

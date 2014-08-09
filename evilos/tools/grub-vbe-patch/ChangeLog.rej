@@ -1,0 +1,29 @@
+***************
+*** 1,23 ****
+- 2006-11-23  Brynet-Inc <brynet@gmail.com>
+- 
+- 	* updated grub 0.97 with a VBE patch by Durand J. Miller 
+- 	<djmiller@djm.co.za> from 2004-05-09.
+- 	* stage2/builtins.c (vbeset_func): New function to set the VBE
+- 	mode and mbi information during the booting sequence.
+- 	* stage2/builtins.c (vbematch_func): New function to locate a
+- 	matching Direct color VBE mode. If a multiboot kernel is loaded,
+- 	then the mode is passed on to the kernel on boot.
+- 	* stage2/builtins.c (builtin_table): Added a pointer to the
+- 	new VBE functions.
+- 	* stage2/common.c (mbi_vbe_controller): New variable and in ...
+- 	* stage2/shared.h (mbi_vbe_controller): ... this.
+- 	* stage2/common.c (mbi_vbe_mode_info): New variable and in ...
+- 	* stage2/shared.h (mbi_vbe_mode_info): ... this.
+- 	* docs/grub.texi (vbeset): Added some documentation for the 
+- 	vbeset command.
+- 	* docs/grub.texi (vbematch): Added some documentation for the 
+- 	vbematch command.
+- 
+  2005-05-08  Yoshinori K. Okuji  <okuji@enbug.org>
+  
+  	* configure.ac (AC_INIT): Upgraded to 0.97.
+--- 1,3 ----
+  2005-05-08  Yoshinori K. Okuji  <okuji@enbug.org>
+  
+  	* configure.ac (AC_INIT): Upgraded to 0.97.
